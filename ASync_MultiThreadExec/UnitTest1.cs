@@ -1,6 +1,8 @@
 using System;
 using System.Threading;
+using System.Threading.Tasks;
 using NUnit.Framework;
+using NUnit.Framework.Internal.Execution;
 
 namespace ASync_MultiThreadExec
 {
@@ -11,25 +13,25 @@ namespace ASync_MultiThreadExec
         {
         }
 
-        [Test]
-        public void Test1()
-        {
-            Console.WriteLine("Test1 Start...");
-            
-            var job = new MyJob();
-            job.DoALongJob();
-            
-            Console.WriteLine("Test1 End...");
-        }
+        // [Test]
+        // public void Test1()
+        // {
+        //     Console.WriteLine("Test1 Start...");
+        //     
+        //     var job = new MyJob();
+        //     job.DoALongJob();
+        //     
+        //     Console.WriteLine("Test1 End...");
+        // }
         
         [Test]
-        public void Test2()
+        public async Task Test2()
         {
             Console.WriteLine("Test1 Start...");
             
             var job = new MyJob();
-            Action action = () => job.DoALongJob();
-            action.BeginInvoke(null, null);
+
+            await job.DoALongJob();
             
             Console.WriteLine("Test1 End...");
         }
@@ -37,18 +39,20 @@ namespace ASync_MultiThreadExec
 
     class MyJob
     {
-        public void DoALongJob()
+        public async Task DoALongJob()
         {
             Console.WriteLine("DoALongJob Start...");
             for (int i = 0; i < 5; i++)
             {
                 Console.Write($"i = {i}\t");
-                Thread.Sleep(1500);
+                await Task.Delay(1500);
             }
 
             Console.Write("\n");
             
             Console.WriteLine("DoALongJob End...");
+
+            //return Task.FromResult();
         }
     }
 }
