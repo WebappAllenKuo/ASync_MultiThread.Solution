@@ -23,11 +23,11 @@ namespace ASync_MultiThreadExec
                 Console.Write(".");
             }
             
-            // t1.Join();
-            // t2.Join();
-            // t3.Join();
+            t1.Join();
+            t2.Join();
+            t3.Join();
             
-           // 沒有寫join(),所以下一行程式有可能比上面三個thread還要早執行
+            // 上述執行緒完成才會再向下執行
             Console.WriteLine("[XXXXXXXXXXXXXXXX]");
         }
 
