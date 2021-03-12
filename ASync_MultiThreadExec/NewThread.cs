@@ -10,16 +10,16 @@ namespace ASync_MultiThreadExec
         public void Test()
         {
             Thread t = new Thread(DoSomething);
-            t.Start();
+            t.Start("aaa");
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 1000; i++)
             {
                 Console.Write(".");
             }
             
         }
 
-        public void DoSomething()
+        public void DoSomething(object name)
         {
             for (int i = 0; i < 100; i++)
             {
