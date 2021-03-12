@@ -21,6 +21,18 @@ namespace ASync_MultiThreadExec
             
             Console.WriteLine("Test1 End...");
         }
+        
+        [Test]
+        public void Test2()
+        {
+            Console.WriteLine("Test1 Start...");
+            
+            var job = new MyJob();
+            Action action = () => job.DoALongJob();
+            action.BeginInvoke(null, null);
+            
+            Console.WriteLine("Test1 End...");
+        }
     }
 
     class MyJob
