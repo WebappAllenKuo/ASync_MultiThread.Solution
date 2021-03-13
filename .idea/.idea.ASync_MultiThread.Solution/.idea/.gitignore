@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Default ignored files
 /shelf/
 /workspace.xml
@@ -8,6 +9,18 @@
 /contentModel.xml
 # Datasource local storage ignored files
 /dataSources/
+=======
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/projectSettingsUpdater.xml
+/contentModel.xml
+/.idea.ASync_MultiThread.Solution.iml
+# Datasource local storage ignored files
+/../../../../../../:\Git\ASync_MultiThread.Solution\.idea\.idea.ASync_MultiThread.Solution\.idea/dataSources/
+>>>>>>> origin/master
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
