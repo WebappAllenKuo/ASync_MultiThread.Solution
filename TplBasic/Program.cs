@@ -9,13 +9,10 @@ namespace TplBasic
     {
         static void Main(string[] args)
         {
-            var t1 = new Task(MyTask); // TPL是在thread pool 執行，所以是背景thread,主程式結束，它就被迫結束
-            t1.Start();
-            t1.Wait(); // 會丟到task完全結束，才再向下執行
+            var task = Task.Run(() => MyTask());
             for (int i = 0; i < 500; i++)
             {
                 Console.Write(".");
-                // Thread.Sleep(100);
             }
         }
 
@@ -24,8 +21,10 @@ namespace TplBasic
             for (int i = 0; i < 500; i++)
             {
                 Console.Write($"[{Thread.CurrentThread.ManagedThreadId}]");
-                //Thread.Sleep(1);
+                Thread.Sleep(1);
             }
+
+            Console.WriteLine("MyTask End.");
         }
     }
 }
