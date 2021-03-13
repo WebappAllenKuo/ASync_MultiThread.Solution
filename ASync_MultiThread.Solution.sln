@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASync_MultiThreadExec", "ASync_MultiThreadExec\ASync_MultiThreadExec.csproj", "{65DE3B8D-02E0-43C2-A734-53C4FD7F6FEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundThread", "BackgroundThread\BackgroundThread.csproj", "{3DA5278C-EDD7-4142-8958-9FAD6DBE5F46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{65DE3B8D-02E0-43C2-A734-53C4FD7F6FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65DE3B8D-02E0-43C2-A734-53C4FD7F6FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65DE3B8D-02E0-43C2-A734-53C4FD7F6FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DA5278C-EDD7-4142-8958-9FAD6DBE5F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DA5278C-EDD7-4142-8958-9FAD6DBE5F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DA5278C-EDD7-4142-8958-9FAD6DBE5F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DA5278C-EDD7-4142-8958-9FAD6DBE5F46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
