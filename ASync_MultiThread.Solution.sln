@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TplBasic", "TplBasic\TplBas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncBasic", "AsyncBasic\AsyncBasic.csproj", "{B9DB6BA0-4A4E-4DE9-9EE6-04E82776DC5D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadLog", "ThreadLog\ThreadLog.csproj", "{B416BD6A-B3B6-45CA-A106-57F89B6951B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{B9DB6BA0-4A4E-4DE9-9EE6-04E82776DC5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9DB6BA0-4A4E-4DE9-9EE6-04E82776DC5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9DB6BA0-4A4E-4DE9-9EE6-04E82776DC5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B416BD6A-B3B6-45CA-A106-57F89B6951B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B416BD6A-B3B6-45CA-A106-57F89B6951B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B416BD6A-B3B6-45CA-A106-57F89B6951B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B416BD6A-B3B6-45CA-A106-57F89B6951B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
