@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net;
+using System.Reflection.Metadata;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -29,6 +30,7 @@ namespace AsyncBasic
         static async Task<int> MyTask(int num1, int num2)
         {
             Thread.Sleep(5000);
+            await Task.Delay(1);
             return num1 + num2;
         }
 
