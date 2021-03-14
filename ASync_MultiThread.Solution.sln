@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncBasic", "AsyncBasic\As
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadLog", "ThreadLog\ThreadLog.csproj", "{B416BD6A-B3B6-45CA-A106-57F89B6951B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskDelay", "TaskDelay\TaskDelay.csproj", "{FF8AA8B9-3BBC-4406-8A98-D2E5766C4BD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{B416BD6A-B3B6-45CA-A106-57F89B6951B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B416BD6A-B3B6-45CA-A106-57F89B6951B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B416BD6A-B3B6-45CA-A106-57F89B6951B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF8AA8B9-3BBC-4406-8A98-D2E5766C4BD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF8AA8B9-3BBC-4406-8A98-D2E5766C4BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF8AA8B9-3BBC-4406-8A98-D2E5766C4BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF8AA8B9-3BBC-4406-8A98-D2E5766C4BD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
