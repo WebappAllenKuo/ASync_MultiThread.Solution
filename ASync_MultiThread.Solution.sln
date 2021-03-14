@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadLog", "ThreadLog\Thre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskDelay", "TaskDelay\TaskDelay.csproj", "{FF8AA8B9-3BBC-4406-8A98-D2E5766C4BD1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskWhenAll", "TaskWhenAll\TaskWhenAll.csproj", "{60792A66-8F8E-43BC-AD95-F77F568215F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{FF8AA8B9-3BBC-4406-8A98-D2E5766C4BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF8AA8B9-3BBC-4406-8A98-D2E5766C4BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF8AA8B9-3BBC-4406-8A98-D2E5766C4BD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60792A66-8F8E-43BC-AD95-F77F568215F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60792A66-8F8E-43BC-AD95-F77F568215F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60792A66-8F8E-43BC-AD95-F77F568215F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60792A66-8F8E-43BC-AD95-F77F568215F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
