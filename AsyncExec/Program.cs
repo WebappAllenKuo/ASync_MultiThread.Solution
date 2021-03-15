@@ -13,11 +13,11 @@ namespace AsyncExec
             Log("Main start.",1); // 1. start
 
             string url = "http://www.google.com/";
-            DownloadStringAsync(url); // 1.1. 非同步;
+            DownloadStringAsync(url).Wait(); // 1.1. 非同步;但由於Wait()是會等待這個非同步結束才會向下，所以主程式在此會停住
 
-            Log("Main end.", 2); // 2. 程式緊接著執行這裡
+            Log("Main end.", 3); // 3. 程式緊接著執行這裡
             
-            await Task.Delay(3000); // 3. 持續等待3 seconds
+            // await Task.Delay(3000); // 3. 持續等待3 seconds
             
             //5. 結束 main()
         }
@@ -36,8 +36,8 @@ namespace AsyncExec
             using (var client =new HttpClient())
             {
                 string content =await client.GetStringAsync(url);
-                // 4. 擷取完畢，接著執行下面程式
-                Log($"DownloadString/content has {content.Length} chars.",3);
+                // 2. 擷取完畢，接著執行下面程式
+                Log($"DownloadString/content has {content.Length} chars.",2);
             }
         }
         
